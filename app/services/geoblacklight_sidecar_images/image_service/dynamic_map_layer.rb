@@ -8,7 +8,7 @@ module GeoblacklightSidecarImages
       # @param [SolrDocument]
       # @return [String] image url
       def self.image_url(document, _size)
-        "#{document.viewer_endpoint}/info/thumbnail/thumbnail.png"
+        "#{document.viewer_endpoint}/thumbnail"
       end
     end
   end
