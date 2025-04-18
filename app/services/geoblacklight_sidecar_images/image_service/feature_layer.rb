@@ -2,13 +2,13 @@
 
 module GeoblacklightSidecarImages
   class ImageService
-    module TiledMapLayer
+    module FeatureLayer
       ##
-      # Formats and returns an image url from an ESRI Tiled Map Layer endpoint.
+      # Formats and returns a thumbnail url from an ESRI Dynamic Map Layer endpoint.
       # @param [SolrDocument]
       # @return [String] image url
       def self.image_url(document, _size)
-        "#{document.viewer_endpoint}/info/thumbnail"
+		  "#{document.viewer_endpoint}/info/thumbnail"
       end
     end
   end
